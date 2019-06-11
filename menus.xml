@@ -82,7 +82,7 @@
         <shortcut mmstring:name="menus/DWContext_HTML_CodeRefactoring_WrapCondition" command="dw.getDocumentDOM().source.wrapInCondition()" enabled="(dw.getDocumentDOM() != null && dw.getDocumentDOM().documentType == 'JavaScript')" domRequired="FALSE"  id="DWContext_HTML_CodeRefactoring_WrapCondition" />
         <shortcut mmstring:name="menus/DWContext_HTML_CodeRefactoring_ConvertArrowFunction" command="dw.getDocumentDOM().source.convertToArrowFunction()" enabled="(dw.getDocumentDOM() != null && dw.getDocumentDOM().documentType == 'JavaScript')" domRequired="FALSE"  id="DWContext_HTML_CodeRefactoring_ConvertArrowFunction" />
         <shortcut mmstring:name="menus/DWContext_HTML_CodeRefactoring_GettersSetters" command="dw.getDocumentDOM().source.createGettersSetters()" enabled="(dw.getDocumentDOM() != null && dw.getDocumentDOM().documentType == 'JavaScript')" domRequired="FALSE"  id="DWContext_HTML_CodeRefactoring_GettersSetters" />
-        
+
         <!-- Synthetic Shortcuts  -->
         <shortcut mmstring:name="menus/DWShortcuts_HTMLSource_DeleteWordLeft" key="Cmd+BkSp" command="if (dw.getDocumentDOM() != null) {dw.getDocumentDOM().source.previousWord(1, true); dw.deleteSelection()}" domRequired="FALSE" id="DWSasdashortcuts_HTMLSource_DeleteWordLeft" />
         <shortcut mmstring:name="menus/DWShortcuts_HTMLSource_DeleteWordRight" key="Cmd+Del" command="if (dw.getDocumentDOM() != null) {dw.getDocumentDOM().source.nextWord(1, true); dw.deleteSelection()}" domRequired="FALSE" id="DWShortcuts_HTMLSource_DeleteWordRight" />
@@ -308,7 +308,7 @@
                 <menuitem mmstring:name="menus/DWDefaultContext_ElementView_ResetAll" command="dw.getDocumentDOM().resetAllElementViews()" id="DWDefaultContext_ElementView_ResetAll" />
             </menu>
         </menu>
-    </menubar>       
+    </menubar>
     <menubar id="DWAssetsContext">
         <menu mmstring:name="menus/DWContext_Assets" id="DWContext_Assets">
             <menuitem mmstring:name="menus/no_name/351" file="Menus/MM/Asset_Context_Refresh.htm" dynamic="true" />
@@ -382,7 +382,7 @@
             </menu>
             <menuitem mmstring:name="menus/DWContext_Assets_LocateInSite" command="dw.assetPalette.locateInSite()" enabled="(site.getSites().length > 0) && (dw.assetPalette.getSelectedCategory() != 'colors') && (dw.assetPalette.getSelectedCategory() != 'urls')" id="DWContext_Assets_LocateInSite" />
         </menu>
-    </menubar> 	
+    </menubar>
     <menubar id="DWReferenceContext">
         <menu mmstring:name="menus/DWContext_Reference" id="DWContext_Reference">
             <menuitem mmstring:name="menus/DWContext_Reference_Copy" key="Cmd+C" command="if (dw.getFocus(true) == 'html' || dw.getFocus() == 'textView') { dw.clipCopy(); } else { MM.event.notify('','dw.clipCopy()') }" enabled="dw.canClipCopy()" domRequired="false" id="DWContext_Reference_Copy" />
@@ -919,7 +919,7 @@
             <menuitem mmstring:name="menus/DWContext_HTML_Copy" key="Cmd+C" command="dw.clipCopy()" enabled="dw.canClipCopy()" domRequired="FALSE" id="DWContext_HTML_Copy" />
             <menuitem file="Menus/MM/Edit_Paste.htm" id="DWContext_HTML_Paste" dynamic="true" />
             <menuitem mmstring:name="menus/DWContext_HTML_Paste_Special" showif="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'PHP_MySQL'))" key="Cmd+Shift+V" file="Menus/MM/Edit_PasteSpecial.htm" id="DWContext_HTML_Paste_Special" />
-            
+
             <separator />
 
             <menuitem mmstring:name="menus/DWContext_HTML_Find" key="Cmd+F" command="dw.showFindReplaceDialog(true)" enabled="dw.getDocumentDOM() != null" domRequired="false" id="DWContext_HTML_Find" />
@@ -933,11 +933,11 @@
             <menuitem mmstring:name="menus/DWContext_HTML_FindAllAndSelect" key="Cmd+Alt+F3" command="dw.findAllAndSelect()" enabled="(dw.getFocus() == 'textView')" platform="win" domRequired="false" id="DWContext_HTML_FindAllAndSelect" />
             <menuitem mmstring:name="menus/DWContext_HTML_FindAllAndSelect" key="Cmd+Alt+G" command="dw.findAllAndSelect()" enabled="(dw.getFocus() == 'textView')" platform="mac" domRequired="false" id="DWContext_HTML_FindAllAndSelect_Mac" />
             <separator />
-            
+
             <menuitem mmstring:name="menus/DWContext_HTML_NewSnippet" command="dw.snippetPalette.newSnippet()" enabled="true" domRequired="FALSE" id="DWContext_HTML_NewSnippet" />
             <menuitem mmstring:name="menus/DWContext_HTML_QuickDocs" key="Cmd+K" showif="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'CSS' || dw.getDocumentDOM().documentType == 'LESS' || dw.getDocumentDOM().documentType == 'SASS' || dw.getDocumentDOM().documentType == 'SCSS'))" command="dw.getDocumentDOM().source.toggleQuickDocs()" enabled="dw.getDocumentDOM() != null" domRequired="FALSE" id="DWContext_HTML_QuickDocs" />
             <separator />
-            
+
             <menuitem file="Menus/MM/Open_Document.htm" enabled="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'CSS' || dw.getDocumentDOM().documentType == 'PHP_MySQL'))" id="DWContext_HTML_OpenDocument" dynamic="true" />
             <menuitem mmstring:name="menus/DWContext_HTML_CustomStyle_Attach" showif="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'CSS' || dw.getDocumentDOM().documentType == 'PHP_MySQL'))" command="dw.attachStyleSheet()" enabled="dwscripts.canEditStyle()" id="DWContext_HTML_CustomStyle_Attach" />
             <separator/>
@@ -947,14 +947,14 @@
                 <menuitem mmstring:name="menus/DWContext_HTML_Selection_ToggleLineComment" command="dw.getDocumentDOM().source.toggleLineComment()" enabled="dw.getDocumentDOM() != null" domRequired="FALSE" id="DWContext_HTML_Selection_ToggleLineComment" />
                 <menuitem mmstring:name="menus/DWContext_HTML_Selection_ToggleBlockComment" command="dw.getDocumentDOM().source.toggleBlockComment()" enabled="dw.getDocumentDOM() != null" domRequired="FALSE" id="DWContext_HTML_Selection_ToggleBlockComment" />
                 <separator />
-                
+
                 <menuitem mmstring:name="menus/DWContext_HTML_Selection_CollapseSelectedCodeFragment"  command="if (dw.getFocus(true) == 'html') {dw.htmlInspector.collapseSelectedCodeFragment(true);} else {dw.getDocumentDOM().collapseSelectedCodeFragment(true);}" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWContext_HTML_Selection_CollapseSelectedCodeFragment" />
                 <menuitem mmstring:name="menus/DWContext_HTML_Selection_CollapseSelectedCodeFragmentInverse" command="if (dw.getFocus(true) == 'html') {dw.htmlInspector.collapseSelectedCodeFragmentInverse(true);} else{dw.getDocumentDOM().collapseSelectedCodeFragmentInverse(true);}" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWContext_HTML_Selection_CollapseSelectedCodeFragmentInverse" />
                 <menuitem mmstring:name="menus/DWContext_HTML_Selection_ExpandSelectedCodeFragments" command="if (dw.getFocus(true) == 'html') {dw.htmlInspector.expandSelectedCodeFragments();} else {dw.getDocumentDOM().expandSelectedCodeFragments();}" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWContext_HTML_Selection_ExpandSelectedCodeFragments" />
                 <menuitem mmstring:name="menus/DWContext_HTML_Selection_CollapseFullTag" showif="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'PHP_MySQL'))" command="if (dw.getFocus(true) == 'html') {dw.htmlInspector.collapseFullTag(true);} else {dw.getDocumentDOM().collapseFullTag(true);}" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWContext_HTML_Selection_CollapseFullTag" />
                 <menuitem mmstring:name="menus/DWContext_HTML_Selection_CollapseFullTagInverse" showif="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'PHP_MySQL'))" command="if (dw.getFocus(true) == 'html') {dw.htmlInspector.collapseFullTagInverse(true);} else {dw.getDocumentDOM().collapseFullTagInverse(true);}" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWContext_HTML_Selection_CollapseFullTagInverse" />
                 <menuitem mmstring:name="menus/DWContext_HTML_Selection_ExpandAllCodeFragments" showif="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'PHP_MySQL'))" command="if (dw.getFocus(true) == 'html') {dw.htmlInspector.expandAllCodeFragments();} else {dw.getDocumentDOM().expandAllCodeFragments();}" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWContext_HTML_Selection_ExpandAllCodeFragments" />
-                
+
                 <separator />
                 <menuitem mmstring:name="menus/DWContext_HTML_CustomStyle_Convert" showif="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'PHP_MySQL'))" command="dw.getDocumentDOM().convertInlineCssToRule()" enabled="dw.getDocumentDOM() != null && dwscripts.canApplyStyle() && dw.getDocumentDOM().canConvertInlineCssToRule()" id="DWContext_HTML_CustomStyle_Convert" />
                 <menuitem mmstring:name="menus/DWContext_HTML_CustomStyle_Move" showif="(dw.getDocumentDOM() != null && (dw.getDocumentDOM().documentType == 'HTML' || dw.getDocumentDOM().documentType == 'CSS' || dw.getDocumentDOM().documentType == 'PHP_MySQL'))" command="dw.getDocumentDOM().moveSelectedStyles()" enabled="(dw.getFocus() == 'textView' || dw.getFocus(true) == 'html') && dw.getDocumentDOM() != null && (dw.getDocumentDOM().getParseMode() == 'html'||dw.getDocumentDOM().getParseMode() == 'css') && dw.getDocumentDOM().canMoveSelectedStyles()" id="DWContext_HTML_CustomStyle_Move" />
@@ -964,9 +964,9 @@
             <menu  showif="(dw.getDocumentDOM() && dw.getDocumentDOM().source && dw.getDocumentDOM().source.getCodeNavList().length > 0)"  mmstring:name="menus/DWContext_HTML_CodeNav" id="DWContext_HTML_CodeNav">
                 <menuitem mmstring:name="menus/DWContext_HTML_CodeNav_Default" enabled="false" file="Menus/MM/CodeNav_Dynamic.htm" domRequired="false" id="DWContext_HTML_CodeNav_Default" dynamic="true" />
             </menu>
-          
+
           <separator />
-          
+
           <menu mmstring:name="menus/DWContext_HTML_CodeRefactoring" id="DWContext_HTML_CodeRefactoring">
             <menuitem mmstring:name="menus/DWContext_HTML_CodeRefactoring_Rename" enabled="(dw.getDocumentDOM() != null && dw.getDocumentDOM().documentType == 'JavaScript')" key="Cmd+Alt+R" command="dw.getDocumentDOM().source.renameSelectedIdentifier()"  domRequired="FALSE" id="DWContext_HTML_CodeRefactoring_Rename" />
             <menuitem mmstring:name="menus/DWContext_HTML_CodeRefactoring_ExtractVariable" enabled="(dw.getDocumentDOM() != null && dw.getDocumentDOM().documentType == 'JavaScript')" key="Cmd+Alt+V" command="dw.getDocumentDOM().source.extractAsVariable()"  domRequired="FALSE" id="DWContext_HTML_CodeRefactoring_ExtractVariable" />
@@ -978,8 +978,8 @@
           </menu>
 
           <separator />
-          
-            <menuitem mmstring:name="menus/DWContext_Text_CodeNavigator" key="Cmd+Opt+N" command="dw.popupCodeNavigator()" enabled="dw.canPopupCodeNavigator()" domRequired="FALSE" id="DWContext_HTML_CodeNavigator" />            
+
+            <menuitem mmstring:name="menus/DWContext_Text_CodeNavigator" key="Cmd+Opt+N" command="dw.popupCodeNavigator()" enabled="dw.canPopupCodeNavigator()" domRequired="FALSE" id="DWContext_HTML_CodeNavigator" />
             <menu id="DWContext_HTML_Code_Hint_Tools" mmstring:name="code_hints/menu/tools" disabled="true">
                 <menuitem command="dw.codeHints.showCodeHints('mm_color_picker')" disabled="true" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWContext_HTML_CodeHints_Tools_ColorPicker" mmstring:name="code_hints/menu/tools/color_picker" />
                 <menuitem command="dw.codeHints.showCodeHints('mm_url_browser')" disabled="true" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWContext_HTML_CodeHints_Tools_UrlBrowser" mmstring:name="code_hints/menu/tools/url_browser" />
@@ -1144,7 +1144,7 @@
                 <separator />
                 <menuitem mmstring:name="menus/DWContext_LocalSite_Cloaking_Enable_Cloaking" arguments="'enable'" file="Menus/MM/Site_Cloaking.htm" id="DWContext_LocalSite_Cloaking_Enable_Cloaking" />
                 <menuitem mmstring:name="menus/DWContext_LocalSite_Cloaking_Cloaking_Settings" command="site.showCloakingSettings()" enabled="site.getCurrentSite().length > 0" id="DWContext_LocalSite_Cloaking_Cloaking_Settings" />
-            </menu>            
+            </menu>
             <menuitem mmstring:name="menus/DWContext_LocalSite_Unlock" arguments="'unlock','site'" file="Menus/MM/Site_File.htm"  id="DWContext_LocalSite_Unlock" />
             <menuitem mmstring:name="menus/DWContext_LocalSite_FindRemote" arguments="'findremote','site'" file="Menus/MM/Site_File.htm" id="DWContext_LocalSite_FindRemote" />
             <separator />
@@ -1169,7 +1169,7 @@
     <!-- File Column header context menu  -->
 	<menubar id="DWFilePanelColumnHeaderContext">
 		<menu mmstring:name="menus/DWContext_FilePanel_ColumnHeader" id="DWContext_FilePanel_ColumnHeader">
-			<menuitem file="Menus/MM/File_ColumnHeader.htm" id="DWContext_FilePanel_ColumnHeaderOptions" dynamic="true"/>						
+			<menuitem file="Menus/MM/File_ColumnHeader.htm" id="DWContext_FilePanel_ColumnHeaderOptions" dynamic="true"/>
 		</menu>
 	</menubar>
   <!-- Site Panels local file view context menu (FILE mode)  -->
@@ -1491,7 +1491,7 @@
             <menuitem mmstring:name="menus/DWContext_Text_CodeNavigator" key="Cmd+Opt+N" command="dw.popupCodeNavigator()" enabled="dw.canPopupCodeNavigator()" domRequired="TRUE" id="DWLiveViewContext_CodeNavigator" />
             <separator />
             <menuitem mmstring:name="menus/DWContextMenu_LiveView_Back" key="Opt+Left" platform="win" arguments="'back_button'" file="Menus/MM/Browser_Controls.htm"  domRequired="FALSE" id="DWLiveViewContext_Back" />
-            <menuitem mmstring:name="menus/DWContextMenu_LiveView_Back" key="Cmd+Left" platform="mac" arguments="'back_button'" file="Menus/MM/Browser_Controls.htm"  domRequired="FALSE" id="DWLiveViewContext_Back" />  
+            <menuitem mmstring:name="menus/DWContextMenu_LiveView_Back" key="Cmd+Left" platform="mac" arguments="'back_button'" file="Menus/MM/Browser_Controls.htm"  domRequired="FALSE" id="DWLiveViewContext_Back" />
             <menuitem mmstring:name="menus/DWContextMenu_LiveView_Forward" key="Opt+Right" platform="win"  arguments="'forward_button'" file="Menus/MM/Browser_Controls.htm" domRequired="FALSE" id="DWLiveViewContext_Forward" />
             <menuitem mmstring:name="menus/DWContextMenu_LiveView_Forward" key="Cmd+Right" platform="mac"  arguments="'forward_button'" file="Menus/MM/Browser_Controls.htm" domRequired="FALSE" id="DWLiveViewContext_Forward" />
             <menuitem mmstring:name="menus/DWContextMenu_LiveView_Reload" key="F5" arguments="'refresh_button'" file="Menus/MM/Browser_Controls.htm" domRequired="FALSE" id="DWLiveViewContext_Reload" />
@@ -1640,7 +1640,7 @@
     </menubar>
     <menubar id="DWDocStatePopup">
         <menu mmstring:name="menus/DWPopup_DocumentState" id="DWPopup_DocumentState">
-           
+
             <menuitem mmstring:name="menus/DWPopup_DocumentState_Unlock" arguments="'unlock','document'" file="Menus/MM/Site_File.htm" id="DWPopup_DocumentState_Unlock" />
             <separator />
             <menuitem mmstring:name="menus/DWPopup_DocumentState_Get" key="Cmd+shift+B" arguments="'get','document'" file="Menus/MM/Site_File.htm" id="DWPopup_DocumentState_Get" />
@@ -2239,7 +2239,7 @@
             <menuitem mmstring:name="menus/DWMenu_Edit_CodeCollapse_CollapseFullTagInverse" key="Cmd+Opt+J" command="dw.getDocumentDOM().collapseFullTagInverse(true)" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWMenu_Edit_CodeCollapse_CollapseFullTagInverse" />
             <menuitem mmstring:name="menus/DWMenu_Edit_CodeCollapse_ExpandAllCodeFragments" key="Cmd+Opt+E" command="dw.getDocumentDOM().expandAllCodeFragments()" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWMenu_Edit_CodeCollapse_ExpandAllCodeFragments" />
 			</menu>
-			<separator /> 
+			<separator />
 		    <menuitem mmstring:name="menus/DWMenu_Edit_QTE" key="Cmd+T"  command="dw.showQuickTagEditor()" enabled="true" domRequired="FALSE" id="DWMenu_Edit_QTE" />
 			<menu mmstring:name="menus/DWMenu_Edit_Link" id="DWMenu_Edit_Link">
 				<menuitem mmstring:name="menus/DWMenu_Edit_Link_MakeLink" file="Menus/MM/Modify_HyperLink.htm" id="DWMenu_Edit_Link_MakeLink" />
@@ -2290,12 +2290,12 @@
                 <menuitem mmstring:name="menus/DWMenu_Edit_Image_Brightness_Contrast" command="dw.getDocumentDOM().doBrightnessContrast()" enabled="dw.getFocus() == 'document' && dw.getDocumentDOM() && dw.getDocumentDOM().getSelectedNode() && dw.getDocumentDOM().getSelectedNode().nodeType == Node.ELEMENT && dw.getDocumentDOM().getSelectedNode().tagName  == 'IMG' && dw.getDocumentDOM().canManipulateImage( )" id="DWMenu_Edit_Image_Brightness_Contrast" />
                 <menuitem mmstring:name="menus/DWMenu_Edit_Image_Sharpen" command="dw.getDocumentDOM().doSharpen()" enabled="dw.getFocus() == 'document' && dw.getDocumentDOM() && dw.getDocumentDOM().canSharpen() && dw.getDocumentDOM().getSelectedNode() && dw.getDocumentDOM().getSelectedNode().nodeType == Node.ELEMENT && dw.getDocumentDOM().getSelectedNode().tagName  == 'IMG' && dw.getDocumentDOM().canManipulateImage( )" id="DWMenu_Edit_Image_Sharpen" />
             </menu>
-            <separator /> 
+            <separator />
 			<menuitem mmstring:name="menus/DWMenu_Edit_Templates_TemplateProperties"  file="Commands/TemplateParams.htm" id="DWMenu_Edit_Templates_TemplateProperties" />
 			<menu mmstring:name="menus/DWMenu_Edit_RepeatEntries" id="DWMenu_Edit_RepeatEntries">
                 <menuitem mmstring:name="menus/DWMenu_Edit_Templates_RepeatRegions_CutCopy" file="Menus/MM/CutCopyRepeatEntry.htm" id="DWMenu_Edit_Templates_RepeatRegions_CutCopy" dynamic="true" />
             </menu>
-			<separator /> 
+			<separator />
 			<menu mmstring:name="menus/DWMenu_Edit_Code" id="DWMenu_Edit_Code">
 				<menuitem mmstring:name="menus/DWMenu_Edit_ApplySourceFormat" file="Commands/Apply Source Formatting.htm" id="DWMenu_Edit_ApplySourceFormat" tooltipLiveView="true" />
 				<menuitem mmstring:name="menus/DWMenu_Edit_ApplySourceFormatSelection" file="Commands/ApplySourceFormatSelection.htm" id="DWMenu_Edit_ApplySourceFormatSelection" tooltipLiveView="true" />
@@ -2303,11 +2303,11 @@
 				<menuitem mmstring:name="menus/DWMenu_Edit_OutdentCode" key="Cmd+Shift+<" command="dw.getDocumentDOM().source.outdentTextView()" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWMenu_Edit_OutdentCode" />
 				<menuitem mmstring:name="menus/DWMenu_Edit_BalanceBracesTextView" key="Cmd+'" command="dw.getDocumentDOM().source.balanceBracesTextView()" enabled="dw.getFocus(true) == 'textView' || dw.getFocus(true) == 'html'" domRequired="false" id="DWMenu_Edit_BalanceBracesTextView" />
 			</menu>
-			<separator /> 
+			<separator />
 			<menu mmstring:name="menus/DWMenu_Edit_Text" id="DWMenu_Edit_Text">
 				<menuitem mmstring:name="menus/DWMenu_Edit_Text_Indent" key="Cmd+Opt+]" command="if ( (dw.getFocus() == 'document' || dw.getFocus() == 'browser')  && dw.getFocus(true) != 'html') {dw.getDocumentDOM().indent()} else {dw.getDocumentDOM().source.indentTextView()}" enabled="dw.getFocus() == 'textView' || dw.getFocus(true) == 'html' || ( (dw.getFocus() == 'document' && dw.getDocumentDOM().getFocus() == 'body') || (dw.getFocus() == 'browser' && ( !dw.getDocumentDOM() || !dw.getDocumentDOM().getHideDisplaysInLiveView()) && dw.getActiveWindow(true) && dw.getActiveWindow(true).browser && dw.getActiveWindow(true).browser.isSelectedTagEditable())) " domRequired="false" id="DWMenu_Edit_Text_Indent" />
 				<menuitem mmstring:name="menus/DWMenu_Edit_Text_Outdent" key="Cmd+Opt+[" command="if ((dw.getFocus() == 'document' || dw.getFocus() == 'browser') && dw.getFocus(true) != 'html') {dw.getDocumentDOM().outdent()} else {dw.getDocumentDOM().source.outdentTextView()}" enabled="dw.getFocus() == 'textView' || dw.getFocus(true) == 'html' || ( (dw.getFocus() == 'document' && dw.getDocumentDOM().getFocus() == 'body') || (dw.getFocus() == 'browser' && ( !dw.getDocumentDOM() || !dw.getDocumentDOM().getHideDisplaysInLiveView()) && dw.getActiveWindow(true) && dw.getActiveWindow(true).browser && dw.getActiveWindow(true).browser.isSelectedTagEditable()))" domRequired="false" id="DWMenu_Edit_Text_Outdent" />
-				<separator /> 	
+				<separator />
 				<menuitem mmstring:name="menus/DWMenu_Edit_Text_Style_B" key="Cmd+B" arguments="'B','edit_text'" file="Menus/MM/Text_Style.htm" id="DWMenu_Edit_Text_Style_B" />
                 <menuitem mmstring:name="menus/DWMenu_Edit_Text_Style_I" key="Cmd+I" arguments="'I','edit_text'" file="Menus/MM/Text_Style.htm" id="DWMenu_Edit_Text_Style_I" />
                 <menuitem mmstring:name="menus/DWMenu_Edit_Text_Style_U" arguments="'U','edit_text'" file="Menus/MM/Text_Style.htm" id="DWMenu_Edit_Text_Style_U" />
@@ -2355,8 +2355,8 @@
             <menuitem id="DWMenu_Mac_Edit_FindNext" disabled="true"/>
             <menuitem id="DWMenu_Edit_LiveSearch" disabled="true"/>
             <menuitem id="DWMenu_Edit_RefreshCodeHints" disabled="true"/>
-            
-            <menu id="DWMenu_Code_Hint_Tools" disabled="true"> 
+
+            <menu id="DWMenu_Code_Hint_Tools" disabled="true">
                 <menuitem id="DWMenu_Edit_CodeHints_Tools_ColorPicker" disabled="true"/>
                 <menuitem id="DWMenu_Edit_CodeHints_Tools_UrlBrowser" disabled="true"/>
                 <menuitem id="DWMenu_Edit_CodeHints_Tools_FontList" disabled="true"/>
@@ -2369,8 +2369,8 @@
         <menu mmstring:name="menus/DWMenu_View" id="DWMenu_View">
             <menuitem mmstring:name="menus/DWMenu_View_Text" command="dw.getActiveWindow().setView('code')" enabled="dw.getActiveWindow() != null" checked="dw.getActiveWindow() != null && dw.getActiveWindow().getView() == 'code'" domRequired="FALSE" id="DWMenu_View_Text" />
 			<menu mmstring:name="menus/DWMenu_View_Split" id="DWMenu_View_Split">
-				<menuitem mmstring:name="menus/DWMenu_View_Split_CodeLive"  file="Menus/MM/View_CodeAndDesignView.htm" arguments="'code_live'" id="DWMenu_View_Split_CodeLive" />  
-				<menuitem mmstring:name="menus/DWMenu_View_Split_CodeDesign"  file="Menus/MM/View_CodeAndDesignView.htm" arguments="'code_design'" id="DWMenu_View_Split_CodeDesign" />  
+				<menuitem mmstring:name="menus/DWMenu_View_Split_CodeLive"  file="Menus/MM/View_CodeAndDesignView.htm" arguments="'code_live'" id="DWMenu_View_Split_CodeLive" />
+				<menuitem mmstring:name="menus/DWMenu_View_Split_CodeDesign"  file="Menus/MM/View_CodeAndDesignView.htm" arguments="'code_design'" id="DWMenu_View_Split_CodeDesign" />
 				<menuitem mmstring:name="menus/DWMenu_View_Split_CodeCode"  command="dw.getActiveWindow().setView('split code')" enabled="dw.getActiveWindow() != null" checked="dw.getActiveWindow() != null && dw.getActiveWindow().getView() == 'split code'" domRequired="FALSE" id="DWMenu_View_Split_CodeCode" />
 				<menuitem mmstring:name="menus/DWMenu_View_Vertical_Split"  command="dw.setSplitViewOrientation('vertical')" enabled="dw.getActiveWindow() != null && dw.getDocumentDOM() != null && ( dw.getDocumentDOM().getView() == 'split' || dw.getActiveWindow().getView() == 'split code')" checked="dw.getActiveWindow() != null && dw.getSplitViewOrientation() == 'vertical'" domRequired="FALSE" id="DWMenu_View_VerticalSplit" />
 				<menuitem mmstring:name="menus/DWMenu_View_Horizontle_Split"  command="dw.setSplitViewOrientation('horizontal')" enabled="dw.getActiveWindow() != null && dw.getDocumentDOM() != null && ( dw.getDocumentDOM().getView() == 'split' || dw.getActiveWindow().getView() == 'split code')" checked="dw.getActiveWindow() != null && dw.getSplitViewOrientation() == 'horizontal'" domRequired="FALSE" id="DWMenu_View_Horizontle_Split" />
@@ -2395,7 +2395,7 @@
                 <menuitem mmstring:name="menus/DWMenu_View_CodeView_SyntaxColoring" command="dw.getDocumentDOM().setShowSyntaxColoring(!dw.getDocumentDOM().getShowSyntaxColoring())" enabled="dw.getFocus() != 'browser' && dw.getDocumentDOM() != null && dw.getDocumentDOM().getView() != 'design'" checked="dw.getDocumentDOM() != null && dw.getDocumentDOM().getShowSyntaxColoring()" domRequired="FALSE" id="DWMenu_View_CodeView_SyntaxColoring" />
                 <menuitem mmstring:name="menus/DWMenu_View_CodeView_AutoIndent" command="dw.getDocumentDOM().setShowAutoIndent(!dw.getDocumentDOM().getShowAutoIndent())" enabled="true" checked="dw.getDocumentDOM() != null && dw.getDocumentDOM().getShowAutoIndent()" domRequired="FALSE" id="DWMenu_View_CodeView_AutoIndent" />
                 <menuitem mmstring:name="menus/DWMenu_View_CodeView_AssetPreview" command="dw.getDocumentDOM().setShowAssetPreview(!dw.getDocumentDOM().getShowAssetPreview())" enabled="dw.getFocus() != 'browser' && dw.getDocumentDOM() != null && dw.getDocumentDOM().getView() != 'design' && (dw.getDocumentDOM().getParseMode() != 'xml' || dw.canShowDesignView(dw.getActiveWindow()))&& dw.getDocumentDOM().getParseMode() != 'json' " checked="dw.getDocumentDOM() != null && dw.getDocumentDOM().getShowAssetPreview() && (dw.getDocumentDOM().getParseMode() != 'xml' || dw.canShowDesignView(dw.getActiveWindow()))&& dw.getDocumentDOM().getParseMode() != 'json'" domRequired="FALSE" id="DWMenu_View_CodeView_AssetPreview" />
-                    
+
                 <menuitem id="DWMenu_View_CodeView_SyntaxAlerts" disabled="true"/>
                 <menuitem id="DWMenu_View_CodeView_InvalidHTML" disabled="true"/>
 				<separator />
@@ -2520,7 +2520,7 @@
 					<menuitem mmstring:name="menus/DWMenu_View_Rulers_ResetOrigin" command="dw.getDocumentDOM().setRulerOrigin(0,0)" enabled="dw.getFocus() == 'document' || (dw.getFocus() == 'textView' && dw.getDocumentDOM() != null && dw.getDocumentDOM().getView() == 'split')" id="DWMenu_View_Rulers_ResetOrigin" tooltipLiveView="true" />
 					<separator />
 					<menuitem mmstring:name="menus/DWMenu_View_Rulers_Pixels" command="dw.getDocumentDOM().setRulerUnits('px')" enabled="dw.getFocus() == 'document' || (dw.getFocus() == 'textView' && dw.getDocumentDOM() != null && dw.getDocumentDOM().getView() == 'split')" checked="dw.getDocumentDOM() != null && dw.getDocumentDOM().getRulerUnits() == 'px'" id="DWMenu_View_Rulers_Pixels" tooltipLiveView="true" />
-                    
+
                     <menuitem id="DWMenu_View_Rulers_Inches" disabled="true"/>
                     <menuitem id="DWMenu_View_Rulers_Centimeters" disabled="true"/>
 				</menu>
@@ -2541,17 +2541,17 @@
                 <menuitem mmstring:name="menus/DWMenu_View_RefreshRelatedFiles" command="dw.refreshRelatedFiles()" enabled="dw.getDocumentDOM() != null" id="DWMenu_View_Refresh_RelatedFiles" />
 				<menuitem mmstring:name="menus/DWMenu_View_RemoteDownload" command="dw.setDownloadExternalFiles(!dw.getDownloadExternalFiles())" checked="dw.getDownloadExternalFiles()" id="DWMenu_View_RemoteDownload" />
             </menu>
-            
+
             <separator platform="mac" />
-            
+
             <menuitem mmstring:name="menus/DWMenu_View_FullScreen" key="Cmd+Ctrl+F" command="dw.setFullScreen(!dw.getIsInFullScreen())" platform="mac" enabled="dw.getDocumentDOM() != null" checked="dw.getIsInFullScreen() == true" domRequired="true" id="DWMenu_View_FullScreen" />
-            
+
             <menuitem id="DWMenu_View_Design" disabled="true"/>
             <menuitem id="DWMenu_View_SplitCode" disabled="true"/>
             <menuitem id="DWMenu_View_RefreshStyles" disabled="true"/>
             <menuitem id="DWMenu_View_LiveView" disabled="true"/>
-            
-            <menu id="DWMenu_View_CSSLayoutColumns" disabled="true"> 
+
+            <menu id="DWMenu_View_CSSLayoutColumns" disabled="true">
                 <menuitem id="DWMenu_View_CSSLayoutColumns_Show" disabled="true"/>
                 <menuitem id="DWMenu_View_CSSLayoutColumns_BoxOutlines" disabled="true"/>
             </menu>
@@ -2700,7 +2700,7 @@
                 <menuitem mmstring:name="menus/DWMenu_Insert_responsiveGridRow" enabled="(((dw.getActiveWindow(true) != null && dw.getActiveWindow(true).allowsEdits()) && dw.getDocumentDOM() != null && dw.getDocumentDOM().getParseMode() == 'html' && !( dw.getDocumentDOM().getIsTemplateDocument() && dw.getFocus() == 'browser') && (!dw.getActiveWindow(true).browser || (dw.getActiveWindow(true).browser && !dw.getActiveWindow(true).browser.isLiveEditingInProgress()))))" file="Responsive/responsiveGridRow.htm" id="DW_responsiveGridRow" />
 
                 <separator />
-                
+
                 <menuitem mmstring:name="menus/DWMenu_Insert_responsiveCarousel" enabled="(((dw.getActiveWindow(true) != null && dw.getActiveWindow(true).allowsEdits()) && dw.getDocumentDOM() != null && dw.getDocumentDOM().getParseMode() == 'html' && !( dw.getDocumentDOM().getIsTemplateDocument() && dw.getFocus() == 'browser') && (!dw.getActiveWindow(true).browser || (dw.getActiveWindow(true).browser && !dw.getActiveWindow(true).browser.isLiveEditingInProgress()))))" file="Responsive/responsiveCarousel.htm" id="DW_responsiveCarousel" />
                 <menu mmstring:name="menus/DWMenu_Insert_responsiveCards" showif="((dw.getDocumentDOM() == null) ||(dwscripts.getBootstrapComponentVisibility('Cards')))" id="DW_responsiveCards">
                     <menuitem mmstring:name="menus/DWMenu_Insert_responsiveCardsCase1" enabled="(((dw.getActiveWindow(true) != null && dw.getActiveWindow(true).allowsEdits()) && dw.getDocumentDOM() != null && dw.getDocumentDOM().getParseMode() == 'html' && !( dw.getDocumentDOM().getIsTemplateDocument() && dw.getFocus() == 'browser') && (!dw.getActiveWindow(true).browser || (dw.getActiveWindow(true).browser && !dw.getActiveWindow(true).browser.isLiveEditingInProgress()))))" file="Responsive/Cards/responsiveCardsCase1.htm" id="DW_responsiveCardsDefault" />
@@ -2737,7 +2737,7 @@
                     <menuitem mmstring:name="menus/DWMenu_Insert_responsiveBadgesLight" enabled="(((dw.getActiveWindow(true) != null && dw.getActiveWindow(true).allowsEdits()) && dw.getDocumentDOM() != null && dw.getDocumentDOM().getParseMode() == 'html' && !( dw.getDocumentDOM().getIsTemplateDocument() && dw.getFocus() == 'browser') && (!dw.getActiveWindow(true).browser || (dw.getActiveWindow(true).browser && !dw.getActiveWindow(true).browser.isLiveEditingInProgress()))))" file="Responsive/Badges/responsiveBadgesLight.htm" id="DW_responsiveBadgesLight" />
                     <menuitem mmstring:name="menus/DWMenu_Insert_responsiveBadgesDark" enabled="(((dw.getActiveWindow(true) != null && dw.getActiveWindow(true).allowsEdits()) && dw.getDocumentDOM() != null && dw.getDocumentDOM().getParseMode() == 'html' && !( dw.getDocumentDOM().getIsTemplateDocument() && dw.getFocus() == 'browser') && (!dw.getActiveWindow(true).browser || (dw.getActiveWindow(true).browser && !dw.getActiveWindow(true).browser.isLiveEditingInProgress()))))" file="Responsive/Badges/responsiveBadgesDark.htm" id="DW_responsiveBadgesDark" />
                 </menu>
-                
+
                 <menu mmstring:name="menus/DWMenu_Insert_responsiveGlyphicons" showif="dwscripts.getBootstrapComponentVisibility('Glyphicons')" id="DW_responsiveGlyphicons">
                     <menuitem mmstring:name="menus/DWMenu_Insert_responsiveGlyphiconsOk" enabled="(((dw.getActiveWindow(true) != null && dw.getActiveWindow(true).allowsEdits()) && dw.getDocumentDOM() != null && dw.getDocumentDOM().getParseMode() == 'html' && !( dw.getDocumentDOM().getIsTemplateDocument() && dw.getFocus() == 'browser') && (!dw.getActiveWindow(true).browser || (dw.getActiveWindow(true).browser && !dw.getActiveWindow(true).browser.isLiveEditingInProgress()))))" file="Responsive/Glyphicons/responsiveGlyphiconsOk.htm" id="DW_responsiveGlyphiconsOk" />
                     <menuitem mmstring:name="menus/DWMenu_Insert_responsiveGlyphiconsHome" enabled="(((dw.getActiveWindow(true) != null && dw.getActiveWindow(true).allowsEdits()) && dw.getDocumentDOM() != null && dw.getDocumentDOM().getParseMode() == 'html' && !( dw.getDocumentDOM().getIsTemplateDocument() && dw.getFocus() == 'browser') && (!dw.getActiveWindow(true).browser || (dw.getActiveWindow(true).browser && !dw.getActiveWindow(true).browser.isLiveEditingInProgress()))))" file="Responsive/Glyphicons/responsiveGlyphiconsHome.htm" id="DW_responsiveGlyphiconsHome" />
@@ -3192,8 +3192,8 @@
           <menuitem mmstring:name="menus/DWMenu_Window_BrowseAddOns"  command="dw.loadCCBrowser()" enabled="true" domRequired="false" id="DWMenu_Window_BrowseAddOns" />
 			<menu mmstring:name="menus/DWMenu_Window_Extensions"  id="DWMenu_File_ServicesCommands">
 				<menuitem id="DWMenu_Services_Dynamic" dynamic="true" mmstring:name="menu/DWMenu_Services_Dynamic" file="Menus/MM/CSXS_Services.htm" />
-                
-                <menu id="DWMenu_Modify" disabled="true"> 
+
+                <menu id="DWMenu_Modify" disabled="true">
                     <menuitem id="DWMenu_Modify_PageProperties" disabled="true"/>
                     <menuitem id="DWMenu_Modify_Templates_TemplateProperties" disabled="true"/>
                     <menuitem id="DWContext_Modify_ManageFonts" disabled="true"/>
@@ -3201,7 +3201,7 @@
                     <menuitem id="DWMenu_Modify_MakeLink" disabled="true"/>
                     <menuitem id="DWMenu_Modify_RemoveLink" disabled="true"/>
                     <menuitem id="DWMenu_Modify_OpenLinkedPage" disabled="true"/>
-                    <menu id="DWMenu_Modify_Table" disabled="true"> 
+                    <menu id="DWMenu_Modify_Table" disabled="true">
                         <menuitem id="DWMenu_Modify_Table_Select" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Table_MergeCells" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Table_SplitCell" disabled="true"/>
@@ -3221,23 +3221,23 @@
                         <menuitem id="DWMenu_Modify_Table_ConvertHeightsToPixels" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Table_ConvertHeightsToPercent" disabled="true"/>
                     </menu>
-                    <menu id="DWMenu_Modify_Image" disabled="true"> 
+                    <menu id="DWMenu_Modify_Image" disabled="true">
                         <menuitem id="DWMenu_Modify_Image_OptimizeInFW" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Image_EditInFW" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Image_EditImage" disabled="true"/>
                     </menu>
-                    <menu id="DWMenu_Modify__Image_EditWith" disabled="true"> 
+                    <menu id="DWMenu_Modify__Image_EditWith" disabled="true">
                         <menuitem id="DWMenu_Modify_EditWith_NoEditors" disabled="true"/>
                     </menu>
-                    <menu id="DWMenu_Modify__ImageSource_EditWith" disabled="true"> 
+                    <menu id="DWMenu_Modify__ImageSource_EditWith" disabled="true">
                         <menuitem id="DWMenu_Modify_ImageSource_EditWith_NoEditors" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Image_Crop" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Image_Resample" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Image_Brightness_Contrast" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Image_Sharpen" disabled="true"/>
                     </menu>
-                    
-                    <menu id="DWMenu_Modify_Arrange" disabled="true"> 
+
+                    <menu id="DWMenu_Modify_Arrange" disabled="true">
                         <menuitem id="DWMenu_Modify_Arrange_BringFront" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Arrange_SendBack" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Align_AlignLeft" disabled="true"/>
@@ -3249,14 +3249,14 @@
                         <menuitem id="DWMenu_Modify_Align_MakeSameWidth" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Align_MakeSameHeight" disabled="true"/>
                     </menu>
-                    
-                    <menu id="DWMenu_Modify_Library" disabled="true"> 
+
+                    <menu id="DWMenu_Modify_Library" disabled="true">
                         <menuitem id="DWMenu_Modify_Library_AddObjectL" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Library_UpdateCurrentPageL" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Library_UpdatePagesL" disabled="true"/>
                     </menu>
 
-                    <menu id="DWMenu_Modify_Templates" disabled="true"> 
+                    <menu id="DWMenu_Modify_Templates" disabled="true">
                         <menuitem id="DWMenu_Modify_Templates_Apply" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Templates_Detach" disabled="true"/>
                         <menuitem id="DWMenu_Modify_Templates_OpenAttached" disabled="true"/>
@@ -3274,12 +3274,12 @@
                         <menuitem id="DWMenu_Modify_Templates_EditableRegions_Default" disabled="true"/>
                     </menu>
                 </menu>
-                
-                <menu id="DWMenu_Text" disabled="true"> 
+
+                <menu id="DWMenu_Text" disabled="true">
                     <menuitem id="DWMenu_Text_Indent" disabled="true"/>
                     <menuitem id="DWMenu_Text_Outdent" disabled="true"/>
 
-                    <menu id="DWMenu_Text_Format" disabled="true"> 
+                    <menu id="DWMenu_Text_Format" disabled="true">
                         <menuitem id="DWMenu_Text_Format_DefaultText" disabled="true"/>
                         <menuitem id="DWMenu_Text_Format_P" disabled="true"/>
                         <menuitem id="DWMenu_Text_Format_H1" disabled="true"/>
@@ -3291,7 +3291,7 @@
                         <menuitem id="DWMenu_Text_Format_PRE" disabled="true"/>
                     </menu>
 
-                    <menu id="DWMenu_Text_List" disabled="true"> 
+                    <menu id="DWMenu_Text_List" disabled="true">
                         <menuitem id="DWMenu_Text_List_DefaultList" disabled="true"/>
                         <menuitem id="DWMenu_Text_List_UL" disabled="true"/>
                         <menuitem id="DWMenu_Text_List_OL" disabled="true"/>
@@ -3299,20 +3299,20 @@
                         <menuitem id="DWMenu_Text_List_PropertiesList" disabled="true"/>
                     </menu>
 
-                    <menu id="DWMenu_Text_Style" disabled="true"> 
+                    <menu id="DWMenu_Text_Style" disabled="true">
                         <menuitem id="DWMenu_Text_Style_B" disabled="true"/>
                         <menuitem id="DWMenu_Text_Style_I" disabled="true"/>
                         <menuitem id="DWMenu_Text_Style_U" disabled="true"/>
                         <menuitem id="DWMenu_Text_Style_S" disabled="true"/>
                     </menu>
 
-                    <menu id="DWMenu_Text_CustomStyle" disabled="true"> 
+                    <menu id="DWMenu_Text_CustomStyle" disabled="true">
                         <menuitem id="DWMenu_Text_CustomStyle_AttachCustom" disabled="true"/>
                         <menuitem id="DWMenu_Text_CustomStyle_Convert" disabled="true"/>
                         <menuitem id="DWMenu_Text_CustomStyle_Move" disabled="true"/>
                     </menu>
 
-                    <menu id="DWMenu_Text_Size" disabled="true"> 
+                    <menu id="DWMenu_Text_Size" disabled="true">
                         <menuitem id="DWMenu_Text_Size_Default" disabled="true"/>
                         <menuitem id="DWMenu_Text_Size_1" disabled="true"/>
                         <menuitem id="DWMenu_Text_Size_2" disabled="true"/>
@@ -3323,7 +3323,7 @@
                         <menuitem id="DWMenu_Text_Size_7" disabled="true"/>
                     </menu>
 
-                    <menu id="DWMenu_Text_SizeChange" disabled="true"> 
+                    <menu id="DWMenu_Text_SizeChange" disabled="true">
                         <menuitem id="DWMenu_Text_SizeUp_+1" disabled="true"/>
                         <menuitem id="DWMenu_Text_SizeUp_+2" disabled="true"/>
                         <menuitem id="DWMenu_Text_SizeUp_+3" disabled="true"/>
@@ -3333,8 +3333,8 @@
                         <menuitem id="DWMenu_Text_SizeDown_-3" disabled="true"/>
                     </menu>
                 </menu>
-                
-                <menu id="DWMenu_Commands" disabled="true"> 
+
+                <menu id="DWMenu_Commands" disabled="true">
                     <menuitem id="DWMenu_Commands_EditCommandList" disabled="true"/>
                     <menuitem id="DWMenu_Text_CheckSpelling" disabled="true"/>
                     <menuitem id="DWMenu_Commands_ApplySourceFormat" disabled="true"/>
@@ -3349,9 +3349,9 @@
                     <menuitem id="DWMenu_Commands_SortTable" disabled="true"/>
                     <menuitem id="DWMenu_Commands_AttachXSLStyleSheet" disabled="true"/>
                 </menu>
-                
+
                 <menuitem id="ColdFusion_Login_Wizard" disabled="true"/>
-                
+
             </menu>
  			 <separator platform="mac" />
             <menuitem mmstring:name="menus/DWMenu_Window_NextDocument" key="Cmd+`" command="dw.goToNextDocument()" enabled="dw.getFocus() == 'textView' || dw.getFocus() == 'document' || dw.getFocus() == 'browser' " platform="mac" domRequired="false" id="DWMenu_Window_NextDocument" />
@@ -3359,11 +3359,11 @@
 			<separator />
             <menuitem mmstring:name="NodeSpy" command="dw.showNodeSpy()" platform="win" showif="dw.isDebugBuild()" id="DWMenu_Window_NodeSpy" />
             <menuitem mmstring:name="menus/DWMenu_Window_Default" file="Menus/MM/Window_Titles.htm" id="DWMenu_Window_Default" dynamic="true" />
-            
+
             <menuitem id="DWMenu_Window_Layers" disabled="true"/>
             <menuitem id="DWMenu_Window_History" disabled="true"/>
             <menuitem id="DWMenu_Window_HistoryMac" disabled="true"/>
-            
+
             <menu id="DWMenu_View_Plugins" disabled="true"> </menu>
             <menu id="DWMenu_Insert_InteractiveImage" disabled="true"> </menu>
             <menu id="DWMenu_Insert_Head" disabled="true"> </menu>
@@ -3380,7 +3380,7 @@
             <menuitem id="DWMenu_Insert_PHP_If" disabled="true"/>
             <menuitem id="DWMenu_Insert_PHP_Else" disabled="true"/>
 
-            <menu id="DWMenu_Text_Alignment" disabled="true"> 
+            <menu id="DWMenu_Text_Alignment" disabled="true">
                 <menuitem id="DWMenu_Text_Alignment_Left" disabled="true"/>
                 <menuitem id="DWMenu_Text_Alignment_Center" disabled="true"/>
                 <menuitem id="DWMenu_Text_Alignment_Right" disabled="true"/>
@@ -3406,12 +3406,12 @@
             <menuitem id="DWMenu_Site_NewBCSite" disabled="true"/>
             <menuitem id="DWMenu_MainSite_DeployBinFiles" disabled="true"/>
 
-            <menu id="DWMenu_PhoneGap_Build" disabled="true"> 
+            <menu id="DWMenu_PhoneGap_Build" disabled="true">
                 <menuitem id="DWMenu_PhoneGap_Build_Panel_win" disabled="true"/>
                 <menuitem id="DWMenu_PhoneGap_Build_Settings_win" disabled="true"/>
                 <menuitem id="DWMenu_PhoneGap_Build_Panel_mac" disabled="true"/>
                 <menuitem id="DWMenu_PhoneGap_Build_Settings_mac" disabled="true"/>
-            </menu>    
+            </menu>
 
             <menuitem id="DWMenu_Window_BC_Modules" disabled="true"/>
             <menuitem id="DWMenu_Window_ManageExtensions" disabled="true"/>
@@ -3438,17 +3438,18 @@
             <menuitem mmstring:name="menus/DWMenu_Help_Update" command="dw.invokeUpdater()" enabled="true" id="DWMenu_Help_Update" />
             <separator platform="win" />
             <menuitem mmstring:name="menus/DWMenu_Help_About" command="dw.showAboutBox()" enabled="true" platform="win" id="DWMenu_Help_About" />
-            
+
             <menuitem id="DWMenu_Help_NewFeatureGuides" disabled="true"/>
         </menu>
         <menu mmstring:name="EAD.IESB" id="DWMenu_EAD.IESB">
-            <menuitem mmstring:name="Versão Web" enabled="true" file="Menus/EADIESB/Versao_Web.html" id="DWMenu_EADIESB_Versão_Web" />
-            <menuitem mmstring:name="Remover UIAS" enabled="true" file="Menus/EADIESB/Remover_UIAS.html" id="DWMenu_EADIESB_Remover_UIAS" />
-            <menuitem mmstring:name="Versão DS" enabled="true" file="Menus/EADIESB/Versao_DS.html" id="DWMenu_EADIESB_Versao_DS" />
+            <menuitem mmstring:name="Versão Web" enabled="true" file="Menus/EADIESB/Versao_Web.htm" id="DWMenu_EADIESB_Versão_Web" />
+            <menuitem mmstring:name="Remover UIAS" enabled="true" file="Menus/EADIESB/Remover_UIAS.htm" id="DWMenu_EADIESB_Remover_UIAS" />
+            <menuitem mmstring:name="Versão DS" enabled="true" file="Menus/EADIESB/Versao_DS.htm" id="DWMenu_EADIESB_Versao_DS" />
+            <menuitem mmstring:name="Manipulando Links e Imagens" enabled="true" file="Menus/EADIESB/Manipulando_Links_e_Imagens.htm" id="DWMenu_EADIESB_Manipulando_Links_e_Imagens" />
             <separator />
             <menuitem mmstring:name="Feito por Diogo Saúde" enabled="false"/>
             <menuitem mmstring:name="Repositorio Git" enabled="true" command="dwscripts.browseURL('https://github.com/uxdiogo/Menu-EAD.IESB')"/>
-            
+
         </menu>
     </menubar>
 </menus>
